@@ -1,0 +1,133 @@
+:root{
+    --cor-de-fundo : #C9D991;
+    --branco :#ffffff;
+    --cor-borda-input : #6e754e;
+    --cor-titulo : #6e754e; 
+    --cor-placeholder : #6e784d;
+    --cor-de-fundo-botao : #C9D991;
+    --font-principal : 'Poppins', sans-serif;
+}
+
+.body{
+   font-family: var(--font-principal);
+   display: flex;
+   background-color: var(--cor-de-fundo);
+}
+
+.container__calculadora{
+    text-align: center;
+    border: 1px solid black;
+    padding: 15px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 150px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px 3px rgba(0, 0, 0, 0.062);
+    max-width: 600px;
+    background-color: var(--branco);
+  
+    
+}
+
+.calculadora__titulo{
+    margin-bottom: 50px;
+    font-size: 23px;
+    font-weight: 600;
+    color: var(--cor-titulo);
+}
+
+.form__input{
+    width: 70%;
+    border-radius: 9px;
+    padding: 2px;
+    border-color: var(--cor-borda-input);
+    
+}
+
+.form__input::placeholder{
+    color: var(--cor-placeholder);
+}
+
+.peso{
+    margin-bottom: 40px;
+}
+
+.altura{
+    margin-bottom: 40px;
+}
+
+
+.form__input-button{
+    margin-top: 50px;
+    display: flex;
+    margin: 50px auto;
+    border-radius: 9px;
+    padding: 4px;
+    width: 60%;
+    justify-content: center;
+    background-color: var(--cor-de-fundo-botao);
+    border: none;
+    color: var(--cor-titulo);
+    box-shadow: 3px 2px 3px 3px rgba(0, 0, 0, 0.059);  
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    
+}
+
+.imc__resposta{
+    color: var(--cor-titulo);
+    font-size: 23px;
+    
+    
+}
+
+@media (min-width : 768px) and (max-width : 1023px) {
+    .container__calculadora{
+        height: 60vh;
+    }
+
+    .calculadora__titulo{
+        font-size: 35px;
+    }
+
+    .form__input{
+        width: 50%;
+        padding: 5px;
+    }
+
+    .form__input-button{
+        padding: 10px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width : 1024px) {
+    .calculadora__titulo{
+        font-size: 40px;
+    }
+
+    .form__input{
+        width: 60%;
+        padding: 10px;
+    }
+
+    .form__input::placeholder{
+        font-size: 15px;
+    }
+
+    .form__input-button{
+        padding: 9px;
+        font-size: 20px;
+    }
+
+    .form__input-button:hover{
+        color: var(--branco);
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    }
+
+
+}
